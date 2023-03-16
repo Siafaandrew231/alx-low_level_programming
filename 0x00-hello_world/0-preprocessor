@@ -1,14 +1,2 @@
 #!/bin/bash
-
-# Set the input C file name
-CFILE="input.c"
-
-# Set the output file name
-OUTPUT_FILE="output.c"
-
-# Run the C file through the preprocessor and save the result
-cpp $CFILE > $OUTPUT_FILE
-
-# Print a message indicating the success of the operation
-echo "Preprocessing of $CFILE completed. Output saved to $OUTPUT_FILE."
-
+CFILE="input.c"; OUTPUT_FILE="output.c"; cpp $CFILE > $OUTPUT_FILE; echo "Preprocessing of $CFILE completed. Output saved to $OUTPUT_FILE."
