@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="input.c"; OUTPUT_FILE="output.c"; cpp $CFILE > $OUTPUT_FILE; echo "Preprocessing of $CFILE completed. Output saved to $OUTPUT_FILE."
+gcc -E $CFILE
