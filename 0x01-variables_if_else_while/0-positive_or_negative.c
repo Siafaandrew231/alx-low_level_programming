@@ -1,9 +1,6 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 
 /**
  * main - Generates a random number and prints whether it is positive, negative,
@@ -13,8 +10,7 @@
  */
 int main(void)
 {
-	int n;
-srand(time(NULL));
+        srand(time(NULL));
         int n = rand() % 201 - 100;  /* generates a random number between -100 and 100 */
         printf("%d\n", n);
 
@@ -30,8 +26,7 @@ srand(time(NULL));
         {
                 printf("is negative\n");
         }
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	return (0);
+
+        return (0);
 }
+
